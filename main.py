@@ -14,6 +14,7 @@ bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     print("Bot Online!")
+    print("555")
     synced = await bot.tree.sync()
     print(f"{len(synced)} command(s)")
 
